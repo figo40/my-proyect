@@ -1,0 +1,161 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="funcion.js" />
+    <script src="funcion.js"></script>
+
+
+  </head>
+
+
+<body>
+        <div class="container0">
+                <div class="row">
+                  <div class="col-sm">
+                  <center><img src="prueba/img.jpg" width=100 height=80   /></center>
+                  </div>
+                  <div class="col-sm" i>
+                  <center><h1 > MI TIENDA </h1></center>
+                  </div>
+                  <div class="col-sm">
+                  <left><i class="fas fa-cart-arrow-down"  ></i></left>
+                  </div>
+                  </div>
+
+
+  <div class="container1">
+      <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-4">
+          <ul class="list-unstyled">
+              <li class="media">
+                  <center><img src="prueba/pan.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="Pan1">  PAN</label></h5>
+                  <input TYPE="number" id="cantidadpan">
+                  <input type="hidden" id="valorpan" value="2000">
+                </div>
+              </li>
+              <li class="media my-4">
+                  <center><img src="prueba/leche.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="leche1">  LECHE</label></h5>
+                  <input TYPE="number" id="cantidadleche">
+                  <input type="hidden" id="valorleche" value="1500">
+
+                </div>
+              </li>
+              <li class="media">
+                  <center><img src="prueba/huevos.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="huevos1">  HUEVOS</label></h5>
+                  <input TYPE="number" id="cantidadhuevos">
+                  <input type="hidden" id="valorhuevos" value="500">
+                </div>
+              </li>
+            </ul>
+      </div>
+
+      <div class="col-2">
+
+      </div>
+      <div class="col-4">
+          <ul class="list-unstyled">
+              <li class="media">
+                <center><img src="prueba/jabon.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="jabon1">  JABON</label></h5>
+                  <input TYPE="number" id="cantidadjabon">
+                  <input type="hidden" id="valorjabon" value="3000">
+                </div>
+              </li>
+              <li class="media my-4">
+                <center><img src="prueba/shampoo.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="shampoo1">  SHAMPOO</label></h5>
+                  <input TYPE="number" id="cantidadshampoo">
+                  <input type="hidden" id="valorshampoo" value="3200">
+                </div>
+              </li>
+              <li class="media">
+                <center><img src="prueba/crema.jpg" width=100 height=80   /></center>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">  <label for="crema1">  CREMA</label></h5>
+                  <input TYPE="number" id="cantidadcrema">
+                  <input type="hidden" id="valorcrema" value="3200">
+              </div>
+              </li>
+            </ul>
+        </div>
+
+      </div>
+      <div class="col-1">
+        
+      </div>
+</div>
+
+
+
+
+<div class="container2">
+  <div class="row">
+    <div class="col-2">
+      ..
+    </div>
+    <div class="col-3">
+      <div class="col">SUBTOTAL</div>
+      <input TYPE="number" id="subtotal">      
+      <div class="col" id="iva">IVA</div>
+      <input TYPE="number" id="ivauno">
+      <input TYPE="hidden" id="ivaoculto" value="19">
+    </div>
+    <div class="col-2">
+      ..
+    </div>
+    <div class="col-3">
+        <div class="col"><label for="subtot">SUBTOTAL</label></div>
+        <input TYPE="number"id="subtotaldos" >
+        <div class="col">IVA</div>
+        <input TYPE="number" id="ivados">
+        <input TYPE="hidden" id="ivadosoculto" value="10">
+    </div>
+    <div class="col-2">
+      ..
+    </div>
+  </div>
+
+
+    <div class="container3">
+        <div class="row">
+          <div class="col-2">
+            ..
+          </div>
+          <div class="col-3">
+              <div class="col">FACTURA</div>
+              <button type="submit" onclick="calcular();">CALCULAR</button>
+          </div>
+          <div class="col-5">                             
+              <div class="col">SUBTOTAL</div>
+              <input TYPE="number" id="subtotalnumerotres">
+              <div class="col">IVA</div>
+              <input TYPE="number" id="ivatres">
+              
+              <div class="col">TOTAL</div>
+              <input TYPE="number"id="total">
+          </div>
+          <div class="col-2">
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
